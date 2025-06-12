@@ -238,7 +238,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .hero-content {
     flex: 1;
@@ -726,22 +725,9 @@ textarea.form-input {
         flex-direction: column;
     }
     
-    
-    .about-image, .hero-image {
-        order: -1;
+    .hero .container{
+        display: block;
     }
-    
-    .section-title {
-        font-size: 3rem;
-    }
-    
-    .hero-title {
-        font-size: 4.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-
     .hero-content {
         padding-right: 0;
         margin-bottom: 5rem;
@@ -760,6 +746,20 @@ textarea.form-input {
     .hero-image{
         display: none;
     }
+    .about-image, .hero-image {
+        order: -1;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
     
     .hamburger {
         display: block;
