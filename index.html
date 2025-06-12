@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/github.ico">
     <title>Ahmad | Full-Stack Developer</title>
     <meta name="description" content="Professional portfolio of Ahmad, a full-stack developer with 5+ years of experience.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -201,6 +202,22 @@
                             </div>
                         </div>
                     </div>
+                    <div class="project-card fade-in" data-category="fullstack">
+                        <img src="img/video-review.jpg" alt="Customers Review app" class="project-img">
+                        <div class="project-info">
+                            <h3 class="project-title">Customers Review App</h3>
+                            <p class="project-desc">Turn your customers feedbacks into high quality Leads with a user-friendly dashboard</p>
+                            <div class="project-tech">
+                                <span>PHP</span>
+                                <span>CSS3</span>
+                                <span>MYSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.video-review.great-site.net" class="project-link" aria-label="Customers Review App demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="#" class="project-link" aria-label="Customers Review App code"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="project-card fade-in" data-category="backend">
                         <img src="https://via.placeholder.com/600x400" alt="Data Analysis Tool" class="project-img">
                         <div class="project-info">
@@ -218,7 +235,7 @@
                         </div>
                     </div>
                     <div class="project-card fade-in" data-category="frontend">
-                        <img src="https://via.placeholder.com/600x400" alt="Portfolio Website" class="project-img">
+                        <img src="img/portfolio.gif" alt="Portfolio Website" class="project-img">
                         <div class="project-info">
                             <h3 class="project-title">Portfolio Website</h3>
                             <p class="project-desc">Responsive portfolio website with dark mode toggle and smooth animations.</p>
@@ -266,7 +283,21 @@
                             <a href="#" class="social-link" aria-label="Stack Overflow profile"><i class="fab fa-stack-overflow"></i></a>
                         </div>
                     </div>
-                    <form class="contact-form fade-in" id="contact-form">
+                    <form 
+                        action="https://formsubmit.co/hayjayworld@gmail.com" 
+                        method="POST"
+                        class="contact-form fade-in"
+                    >
+                        <!-- HoneyPot (spam prevention) -->
+                        <input type="text" name="_honey" style="display: none;">
+
+                        <!-- Disable Captcha (optional) -->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <!-- Redirect after submit (optional) -->
+                        <input type="hidden" name="_next" value="https://hayjayworld.github.io/thanks.html">
+
+                        <!-- Your existing form fields -->
                         <div class="form-group">
                             <input type="text" id="name" name="name" required class="form-input">
                             <label for="name" class="form-label">Your Name</label>
@@ -283,6 +314,8 @@
                             <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
                             <label for="message" class="form-label">Your Message</label>
                         </div>
+
+                        <!-- Submit button -->
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
